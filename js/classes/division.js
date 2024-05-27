@@ -16,9 +16,9 @@ class Division {
         base = base.add(game.stadium.getPaidMoney().mul(game.tv.upgrades.matchReward.apply()).div(2000));
         base = base.mul(game.tv.channels.map(c => c.getMoneyMultiplier()).reduce((a, b) => a.mul(b)));
         return {
-            win: base.mul(2000),
-            draw: base.mul(800),
-            lose: base.mul(500)
+            win: base.mul(20000000),
+            draw: base.mul(8000000),
+            lose: base.mul(5000000)
         };
     }
 
